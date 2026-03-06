@@ -7,16 +7,18 @@ const char* password = "12345678";
 WiFiServer server(80);
 
 // Motor pins
-int IN1 = 26;
-int IN2 = 27;
-int IN3 = 14;
-int IN4 = 12;
+int IN1 = 18;
+int IN2 = 19;
+int IN3 = 21;
+int IN4 = 22;
 int ENA = 25;
-int ENB = 33;
+int ENB = 26;
 
 #define IR1 34
 #define IR2 35
 #define IR3 32
+#define IR4 33
+#define IR5 27
 
 void setup() {
 
@@ -26,6 +28,8 @@ void setup() {
   pinMode(IR1, INPUT);
   pinMode(IR2, INPUT);
   pinMode(IR3, INPUT);
+  pinMode(IR4, INPUT);
+  pinMode(IR5, INPUT);
 
   pinMode(IN1, OUTPUT);
   pinMode(IN2, OUTPUT);
